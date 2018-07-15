@@ -1,0 +1,117 @@
+body {
+    background-color: #17252a;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100 !important;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+}
+
+nav {
+    top: 0;
+    right: 0;
+    position: fixed;
+    letter-spacing: 2px;
+    margin: 10px;
+    padding: 5px !important;
+    float: right;
+    z-index: 999;
+}
+
+.section-full {
+    height: 100vh !important;
+}
+
+.collapse {
+    background-color: transparent !important;
+}
+
+.nav-svg {
+    color: #eee !important;
+    font-size: 1em;
+}
+
+.nav-element {
+    display: inline-block;
+    color: #eee !important;
+    list-style: none;
+    float: right;
+}
+
+.nav-label {
+    text-decoration: none;
+    color: #eee !important;
+}
+
+.nav-label:hover {
+    text-decoration: none;
+}
+
+.nav-double-item {
+    text-align: right;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #eee !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.fa-bars {
+    font-size: 1.5em;
+}
+
+.p-4 {
+    border: #eee solid 1px;
+}
+
+.border-3 {
+    padding: 0;
+}
+
+#welcome-section {
+    position: absolute !important;
+    color: #eee !important;
+    background: transparent !important;
+    margin-left: 120px;
+    width: 38vw;
+}
+
+.contents {
+    letter-spacing: 2px;
+}
+
+.btn-welcome{
+    color: #eee;
+    background-color: #17252a;
+    border: #eee 1px solid;
+    padding: 12px 22px;
+    font-size: 13px;
+    margin-right: 45px;
+    margin-bottom: 45px;
+    transition: 0.2s ;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.btn-welcome:hover, .btn-welcome:active, .btn-welcome:focus{
+    text-decoration: none;
+    color: #17252a;
+    background-color: #eee;
+    outline: none !important;
+    box-shadow: none;    
+}
+
+.contents p{
+    font-size: 1.1em;
+}
