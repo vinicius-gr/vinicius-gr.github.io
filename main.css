@@ -5,7 +5,8 @@
 
      .nav-icon{     
         text-align: center !important;
-        font-size: 1.2em !important;
+        font-size: 3.8vh !important;
+        left: -2px;
      }
 
      .nav-label{
@@ -17,7 +18,7 @@
     }
 
     .vh-100{
-        padding: 0 18px !important;
+        padding: 0 23px !important;
         background: #333 !important;
         -webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.5);
         -moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.5);
