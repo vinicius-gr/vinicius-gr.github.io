@@ -1,0 +1,115 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background: #eee;
+    color: #222;
+}
+
+.vw-100{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 15px;
+    box-shadow: 2px 2px #aaa;
+    z-index: 1;
+    background: #eee;
+ }
+
+nav{    
+    width: 50%;
+    margin: auto;
+}
+ nav ul{
+     list-style-type: none;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav ul li{
+    display: inline;
+    text-align: center;
+ }
+
+ nav ul li a{
+    text-decoration: none;
+    color: #333;
+ }
+
+ section{
+     height: 100vh;
+     position: relative;
+ }
+
+ .nav-icon{
+     padding-right: 10px;
+     position: relative;
+     bottom: 1px;
+ }
+
+.section-align-y{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+.header{
+    font-size: 4em;
+    margin: 30px 0;
+}
+
+.lead{
+    font-size: 1.3em;
+    margin: 3px;
+}
+
+.btn-wrapper{
+    margin-top: 40px;
+}
+
+.btn-welcome{
+    font-family: 'Oswald', sans-serif;
+    color: #222;
+    background-color: #eee;
+    border: #222 1px solid;
+    padding: 12px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 45px;
+    margin-bottom: 45px;
+    transition: 0.2s ;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.btn-welcome:hover, .btn-welcome:active, .btn-welcome:focus{
+    text-decoration: none;
+    color: #eee;
+    background-color: #222;
+    outline: none !important;
+    box-shadow: none;    
+}
+
+.divisor{
+    height: 60px;
+    border: 3px solid #222;
+    position: relative;
+    top: -50px;
+    width: 95%;
+    margin: auto;
+}
+
+.divisor .line{
+    border: none;
+    height: 3px;
+    color: #222;
+    background-color: #222;
+}
+
+
+.divisor .line:nth-child(1){
+    transform: rotate(2deg)
+}
