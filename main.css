@@ -6,36 +6,62 @@ body, html{
     color: #222;
 }
 
-.vw-100{
-    width: 100%;
+.vh-100{
+    height: 100vh;
     position: fixed;
     top: 0;
-    padding: 15px;
-    box-shadow: 2px 2px #aaa;
+    right: 0;
+    padding: 0 25px;
     z-index: 1;
     background: #eee;
  }
 
 nav{    
-    width: 50%;
-    margin: auto;
+    width: 100%;
+    height: 400px;
+    top: 50%;
+    position: relative;
+    margin: auto;    
+    transform: translateY(-50%);
 }
  nav ul{
      list-style-type: none;
      display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     grid-template-rows: auto;
      margin: 0;
      padding: 0;
+     height: 100%;
+     align-items: stretch;
  }
 
  nav ul li{
     display: inline;
-    text-align: center;
+    margin: auto;
  }
 
  nav ul li a{
     text-decoration: none;
     color: #333;
+    display: grid;
+    grid-template-columns: 80px 40px;
+ }
+
+ .nav-label{
+    margin-top: 5px;
+    text-align: right;
+    margin-right: 15px;
+    opacity: 0;     
+    transition: ease-in-out all .3s;
+    font-size: 1.2em;
+ }
+
+ .nav-icon{     
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ nav ul li a:hover .nav-label{
+     opacity: 1;
  }
 
  section{
@@ -43,11 +69,6 @@ nav{
      position: relative;
  }
 
- .nav-icon{
-     padding-right: 10px;
-     position: relative;
-     bottom: 1px;
- }
 
 .section-align-y{
     position: absolute;
@@ -91,25 +112,4 @@ nav{
     background-color: #222;
     outline: none !important;
     box-shadow: none;    
-}
-
-.divisor{
-    height: 60px;
-    border: 3px solid #222;
-    position: relative;
-    top: -50px;
-    width: 95%;
-    margin: auto;
-}
-
-.divisor .line{
-    border: none;
-    height: 3px;
-    color: #222;
-    background-color: #222;
-}
-
-
-.divisor .line:nth-child(1){
-    transform: rotate(2deg)
 }
