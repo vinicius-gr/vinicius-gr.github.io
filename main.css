@@ -1,6 +1,11 @@
 @media (max-width: 600px) {
     nav ul li a{
-        grid-template-columns: 0px 37px !important;
+        grid-template-columns: 0px 41px !important;
+     }
+
+     nav ul li{
+        width: 49px;
+        margin-left: 10px !important;
      }
 
      .nav-icon{     
@@ -17,12 +22,11 @@
     }
 
     .vh-100{
-        padding: 0 15px !important;
-        padding-right: 21px;
+        padding: 0 5px !important;
         background: #333 !important;
-        -webkit-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.5);
-        -moz-box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.5);
-        box-shadow: -1px 0px 14px 5px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.5);
+        -moz-box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.5);
+        box-shadow: 1px 0px 6px 4px rgba(0,0,0,0.5);
     }
 
     .header{
@@ -51,6 +55,10 @@ body, html{
     font-family: 'Oswald', sans-serif;
     background: #fff;
     color: #222;
+}
+
+.material-icons{
+    font-size: 35px !important;
 }
 
 .vh-100{
