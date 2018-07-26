@@ -17,8 +17,8 @@
     }
 
     .vh-100{
-        padding: 15px !important;
-        padding-right: 30px !important;
+        padding: 0 18px !important;
+        background: #333 !important;
     }
 
     .header{
@@ -33,6 +33,10 @@
 
     section{
         width: 75vw;
+    }
+
+    .oval{
+        display: none;
     }
 }
 
@@ -56,7 +60,7 @@ body, html{
 
 nav{    
     width: 100%;
-    height: 50%;
+    height: 400px;
     top: 50%;
     position: relative;
     margin: auto;    
@@ -70,6 +74,7 @@ nav{
      padding: 0;
      height: 100%;
      align-items: stretch;
+     z-index: 1;
  }
 
  nav ul li{
@@ -79,7 +84,7 @@ nav{
 
  nav ul li a{
     text-decoration: none;
-    color: #333;
+    color: #fff;
     display: grid;
     grid-template-columns: 80px 40px;
  }
@@ -151,3 +156,30 @@ nav{
     outline: none !important;
     box-shadow: none;    
 }
+
+.oval {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 700px;
+    height: 700px;
+    border: none;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #333;
+    background-position: 50% 50%;
+    -webkit-background-origin: padding-box;
+    background-origin: padding-box;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    position: absolute;
+    top: -140px;
+    left: -35px;
+    z-index: -1;
+  }
