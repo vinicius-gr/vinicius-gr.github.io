@@ -5,7 +5,7 @@
 
      .nav-icon{     
         text-align: center !important;
-        font-size: 1.5em !important;
+        font-size: 1.2em !important;
      }
 
      .nav-label{
@@ -17,7 +17,8 @@
     }
 
     .vh-100{
-        padding: 30px !important;
+        padding: 15px !important;
+        padding-right: 30px !important;
     }
 
     .header{
@@ -39,7 +40,7 @@ body, html{
     margin: 0;
     padding: 0;
     font-family: 'Oswald', sans-serif;
-    background: #eee;
+    background: #fff;
     color: #222;
 }
 
@@ -50,7 +51,7 @@ body, html{
     right: 0;
     padding: 0 25px;
     z-index: 1;
-    background: #eee;
+    background: #fff;
  }
 
 nav{    
@@ -131,7 +132,7 @@ nav{
 .btn-welcome{
     font-family: 'Oswald', sans-serif;
     color: #222;
-    background-color: #eee;
+    background-color: #fff;
     border: #222 1px solid;
     padding: 12px 22px;
     font-size: 13px;
@@ -145,7 +146,7 @@ nav{
 
 .btn-welcome:hover, .btn-welcome:active, .btn-welcome:focus{
     text-decoration: none;
-    color: #eee;
+    color: #fff;
     background-color: #222;
     outline: none !important;
     box-shadow: none;    
