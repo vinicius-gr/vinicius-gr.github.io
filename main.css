@@ -8,7 +8,7 @@
     }
 
     nav ul li a{
-        color: #333 !important;
+        color: #fff !important;
     }
     .nav-icon {
         text-align: center !important;
@@ -22,9 +22,10 @@
         margin-right: 18px !important;
     }
     #vh-100 {        
-        right: -235px ;
+        right: -20vw ;
         padding: 0 5px !important;
-        background: #fff !important;
+        background: #333 !important;
+        width: 20vw;
     }
     .header {
         font-size: 6vh !important;
@@ -43,10 +44,45 @@
     }
 
     #menu-icon{
-        top: 38px !important;
-        right: 38px !important;
+        top: 11vw !important;
+        right: 9vw !important;
+        z-index: 2;
+    }
+
+    section{
+        width: 90vw;
+    }
+
+    .section-redeced{
+        width: 70vw !important;
+    }
+
+    .menu-icon-div1-after, .menu-icon-div3-after{
+        background: #fff !important;
+    }
+
+    .btn-welcome {
+        font-size: 2vh !important;
+    }
+    
+}
+
+@media (hover:hover) {
+    #menu-icon:hover #div-2{
+        margin-left: -10px;
+    }
+    
+    #menu-icon:hover #div-1{
+        transform: rotate(7deg);
+    }
+    
+    #menu-icon:hover #div-3{
+        transform: rotate(-7deg);
     }
 }
+
+
+
 
 body,
 html {
@@ -123,6 +159,11 @@ nav ul li a {
 section {
     height: 100vh;
     position: relative;
+    transition: width ease-in-out 0.35s;
+}
+
+.section-redeced{
+    width: initial;
 }
 
 .section-align-y {
@@ -208,7 +249,7 @@ section {
 }
 
 #menu-icon {
-    position: absolute;
+    position: fixed;
     top: 50px;
     right: 50px;
     z-index: 2;
@@ -237,18 +278,6 @@ section {
 
 .delay{
     transition-delay: 0.1s;
-}
-
-#menu-icon:hover #div-2{
-    margin-left: -10px;
-}
-
-#menu-icon:hover #div-1{
-    transform: rotate(7deg);
-}
-
-#menu-icon:hover #div-3{
-    transform: rotate(-7deg);
 }
 
 .menu-icon-div2-after{

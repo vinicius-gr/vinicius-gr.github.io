@@ -7,10 +7,11 @@ $("#menu-icon").click(function() {
     document.getElementById('div-1').classList.toggle('menu-icon-div1-after');
     document.getElementById('div-2').classList.toggle('menu-icon-div2-after');
     document.getElementById('div-3').classList.toggle('menu-icon-div3-after');
+    document.getElementById('section-home').classList.toggle('section-redeced');
     if(state){
         $("#vh-100").animate({
             right: 0
-        }, 10);
+        }, 350);
 
         $("#layer-2").animate({
             left: -89
@@ -42,7 +43,7 @@ $("#menu-icon").click(function() {
 
         $("#vh-100").delay(645).animate({
             right: -235
-        }, 10);     
+        }, 350);     
     }
     state = !state;
     
