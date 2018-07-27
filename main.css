@@ -3,29 +3,46 @@
         grid-template-columns: 0px 41px !important;
     }
     nav ul li {
-        width: 49px;
-        margin-left: 10px !important;
+        width: 73px;
+        align-self: center;
     }
 
     nav ul li a{
         color: #fff !important;
+        width: 73px;
+        
+        display: grid;
+        grid-template-areas:    "icon"
+                                "label";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 63px !important;
+        margin-right: 10px;
+        
     }
+
     .nav-icon {
-        text-align: center !important;
+        grid-area: icon;
         font-size: 3.8vh !important;
+        position: relative;
+        top: 5px;
     }
+
     .nav-label {
-        display: none;
+        grid-area: label;
+        font-size: 2.5vh !important;
+        text-align: center !important;
+        margin: 0 !important;
+        font-weight: lighter;
     }
+
     nav ul {
-        grid-template-rows: 37px;
-        margin-right: 18px !important;
+        grid-template-rows: 100%;
+        justify-items: center;
     }
     #vh-100 {        
         right: -20vw ;
-        padding: 0 5px !important;
         background: #333 !important;
-        width: 20vw;
+        width: 23vw;
     }
     .header {
         font-size: 6vh !important;
@@ -45,7 +62,7 @@
 
     #menu-icon{
         top: 11vw !important;
-        right: 9vw !important;
+        right: 8vw !important;
         z-index: 2;
     }
 
@@ -102,7 +119,7 @@ html {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 0 25px;
+    padding: 0;
     z-index: 1;
     background: #fff;
     right: -235px;
