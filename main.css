@@ -23,7 +23,7 @@
     .nav-icon {
         grid-area: icon;
         position: relative;
-        top: 5px;
+        top: 3px;
     }
 
     .nav-label {
@@ -34,6 +34,7 @@
         font-weight: 200 !important;
         font-style: normal !important;
         letter-spacing: 1px !important;
+        text-transform: lowercase;
     }
 
     nav ul {
@@ -174,7 +175,8 @@ nav ul li a {
     font-size: 1.2em;
     font-style: italic;
     position: relative;
-    bottom: 7px;
+    bottom: 7px;    
+    text-transform: lowercase;
 }
 
 .nav-icon {
